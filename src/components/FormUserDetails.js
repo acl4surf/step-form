@@ -20,7 +20,7 @@ export class FormUserDetails extends Component {
           onChange={handleChange("fName")}
           defaultValue={values.fName}
           required
-          error={!values.fname}
+          error={!null}
         />
         <TextField
           label="Last Name"
