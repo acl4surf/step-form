@@ -10,6 +10,8 @@ export class FormUserDetails extends Component {
 
   render() {
     const { values, handleChange } = this.props;
+    console.log(values.fName);
+
     return (
       <div>
         <ButtonAppBar title="Enter User Details" />
@@ -20,7 +22,7 @@ export class FormUserDetails extends Component {
           onChange={handleChange("fName")}
           defaultValue={values.fName}
           required
-          error={!null}
+          error={!values.fName}
         />
         <TextField
           label="Last Name"
